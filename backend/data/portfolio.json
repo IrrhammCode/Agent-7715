@@ -1,0 +1,267 @@
+{
+  "portfolios": {
+    "0x02b2d6a6ffc7b0c83e13c3ed2c0d173150ade348": {
+      "userAddress": "0x02b2d6a6ffc7b0c83e13c3ed2c0d173150ade348",
+      "totalValueUSD": 0,
+      "positions": [
+        {
+          "token": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+          "symbol": "WETH",
+          "balance": "0n",
+          "valueUSD": 0,
+          "avgBuyPrice": null,
+          "currentPrice": 3150.85,
+          "pnl": null,
+          "pnlPercent": null
+        }
+      ],
+      "totalPnL": null,
+      "totalPnLPercent": 0,
+      "lastUpdated": 1767506905
+    }
+  },
+  "tradeHistory": {
+    "0x02b2d6a6ffc7b0c83e13c3ed2c0d173150ade348": [
+      {
+        "txHash": "0x1e51e36136b5f958881330109d62b042b5f3f878c8da98e515cc93a789c64a69",
+        "timestamp": 1767080382,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999778,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xdb845beecb7f612eba4f1b4ee457a5aebf54ca9e8faf57a188823a2114abcdf9",
+        "timestamp": 1767081101,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.9997,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xaef3189d0b995463d194eb62dd83e9e4442e43f6b24894a438739b1c4777c719",
+        "timestamp": 1767089849,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999727,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x62697474a61925107bc0e1afcfc60b795460d38b298410cf1fa730936c71f112",
+        "timestamp": 1767090175,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999787,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x4f1701251150d7384996abcf68627dce779db214e6a9bb35505c086de8e80c6c",
+        "timestamp": 1767090871,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999701,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x228d9977f05eb1ee863124a014f2382a612dbe7769f2f5a00ca8afe660a1759b",
+        "timestamp": 1767091134,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999755,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x33b3cd21bee38080eb0e84fca310fade12c5ed8e7cc6454da9efde44b1344179",
+        "timestamp": 1767091241,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999755,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x65e64188af8f9fc29255fe44c163b311ba12541824932f49a7a037c365f5497f",
+        "timestamp": 1767095092,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999781,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x0",
+        "timestamp": 1767099390,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999737,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xea66057759727c3bb1b6d6bf28f8e2b3bfce2a38e25e04a8253f0dfac1245cee",
+        "timestamp": 1767102379,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999833,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xdbdb2e5f5d0255cb2a81d4805fcaedee593e161654967a27f9072739949bb935",
+        "timestamp": 1767102594,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999916,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x3f1e665f02b2c5ef346c5c13459024de18ad08be0b2f13f854358141e469a4cb",
+        "timestamp": 1767102609,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999916,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x0b20c6b125339f11b296818896f46d9bc4c28b164ea4637034314d99e6563dbb",
+        "timestamp": 1767102952,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.99983,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x4f5a3b4aaab648d318b728d17dc47c5e9ba89a20211b27e5818b29ddefe21283",
+        "timestamp": 1767103387,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999916,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x4e44bbecdbc93da0454a1c701ada59fa55688295c8c24b8f9f51796009c4e313",
+        "timestamp": 1767103541,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999637,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x4e3755fc3ced72317b4eec83533ea0625ccff60553103274a730b614342b8b2c",
+        "timestamp": 1767103698,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999709,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x68e0f99b1b2f5e9698b17c1d558ef20d38eed9048280c183db4b290b51ea41c3",
+        "timestamp": 1767103903,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999663,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x057277124c8a3bbe8f618c88d05444dd34d8318f15904e00dfe4bf4cb3ed9c7a",
+        "timestamp": 1767104597,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999849,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x255d099a1ed7a5fd5fb4a13a4cd4459ab4cdfebe149f7d016f30b86db48bf2bd",
+        "timestamp": 1767104845,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "3000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999937,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x36867c82dfd8bb9be2fb67eb8e4bdcb37c7fbfd9f7dec1168734aa9e807e9ea3",
+        "timestamp": 1767105544,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "100000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999892,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xe2e1adc3a08d980492e121c811751beccaf05eaa7f0ca87dedd5e9a70f1b1d49",
+        "timestamp": 1767106828,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "1000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999878,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x406705ee485973e619d73843560372f1d4fbea55525f85bde1d353bde272b757",
+        "timestamp": 1767108136,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "10000000000000n",
+        "amountOut": "0n",
+        "price": 0.999726,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0x06b5558d45581b5e5bd9a6ce106f3ab81f354714d3001dfdc7cf0264e9e70b90",
+        "timestamp": 1767108722,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "100000000000000n",
+        "amountOut": "0n",
+        "price": 0.999811,
+        "strategy": "MARKET"
+      },
+      {
+        "txHash": "0xcc80ba06339c75e6741a195c9e6c623d762df9b6c4dd1884027fb3afaa2a98bf",
+        "timestamp": 1767506905,
+        "tokenIn": "0xc970a9C00AEAf314523B9B289F6644CcCbfE6930",
+        "tokenOut": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+        "amountIn": "2000000000000000000n",
+        "amountOut": "0n",
+        "price": 0.999845,
+        "strategy": "MARKET"
+      }
+    ]
+  }
+}
