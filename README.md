@@ -28,8 +28,8 @@ Since the Hackathon is focused on the Advanced Permissions, here are the links f
 We have implemented a **full-stack permissioning system** that handles Configuration, Requesting, Storing, Executing, and Visualizing permissions.
 
 *   **1. Configuration & Simplification (UX):**
-    *   [frontend/src/components/configure/PermissionTemplates.tsx](frontend/src/components/configure/PermissionTemplates.tsx) - We simplify complex ERC-7715 parameters into **User Personas** (e.g., "Conservative Saver", "Aggressive Trader"), making Advanced Permissions accessible to non-technical users.
-    *   [frontend/src/components/configure/PermissionSliders.tsx](frontend/src/components/configure/PermissionSliders.tsx) - UI component where users define the **granular parameters** (Daily Budget, Frequency) for the permission they are about to grant.
+    *   [frontend/src/components/configure/PermissionTemplates.tsx (L17-36)](frontend/src/components/configure/PermissionTemplates.tsx#L17-L36) - We simplify complex ERC-7715 parameters into **User Personas** (e.g., "Conservative Saver", "Aggressive Trader"), making Advanced Permissions accessible to non-technical users.
+    *   [frontend/src/components/configure/PermissionSliders.tsx (L13-72)](frontend/src/components/configure/PermissionSliders.tsx#L13-L72) - UI component where users define the **granular parameters** (Daily Budget, Frequency) for the permission they are about to grant.
 
 *   **2. Requesting Permissions (Frontend):**
     *   [frontend/src/hooks/useActivateAgent.ts (L131-152)](frontend/src/hooks/useActivateAgent.ts#L131-L152) - Calling `walletClient.requestExecutionPermissions` with the `erc20-token-periodic` policy and user-defined parameters.
@@ -41,14 +41,14 @@ We have implemented a **full-stack permissioning system** that handles Configura
     *   [backend/src/services/executionEngine.ts (L106-198)](backend/src/services/executionEngine.ts#L106-L198) - The core engine that runs on a cron job. It reconstructs the **Session Account** from the private key and executes the trade using `sendTransaction`. The blockchain validates the transaction against the stored Permission Policy.
 
 *   **5. Agent-to-Agent Delegation (Future-Proofing):**
-    *   [backend/src/services/agentDelegation.ts](backend/src/services/agentDelegation.ts) - We implemented logic for **Chain of Command Delegation** (inspired by ERC-8004), allowing one Agent to delegate sub-permissions to another specialized Agent (e.g., "Portfolio Manager" delegates to "Sniper Bot"). 
+    *   [backend/src/services/agentDelegation.ts (L89-130)](backend/src/services/agentDelegation.ts#L89-L130) - We implemented logic for **Chain of Command Delegation** (inspired by ERC-8004), allowing one Agent to delegate sub-permissions to another specialized Agent (e.g., "Portfolio Manager" delegates to "Sniper Bot"). 
     *   See `canDelegateExecute` (L89) which enforces expiry and allowance checks off-chain before submission.
 
 *   **6. Visualizing Health (Analytics):**
-    *   [frontend/src/components/dashboard/PermissionHealthCard.tsx](frontend/src/components/dashboard/PermissionHealthCard.tsx) - A creative component that tracks valid permission usage (e.g., "70% of Daily Limit Used", "Resets in 4 hours"), giving users real-time transparency into their agent's autonomy.
+    *   [frontend/src/components/dashboard/PermissionHealthCard.tsx (L19-163)](frontend/src/components/dashboard/PermissionHealthCard.tsx#L19-L163) - A creative component that tracks valid permission usage (e.g., "70% of Daily Limit Used", "Resets in 4 hours"), giving users real-time transparency into their agent's autonomy.
 
 *   **7. Emergency Revocation (Safety):**
-    *   [frontend/src/components/dashboard/EmergencyStopButton.tsx](frontend/src/components/dashboard/EmergencyStopButton.tsx) - Users retain full control. This component allows them to instantly **Revoke** the permission (by setting allowance to 0 or invalidating the session) if the agent misbehaves.
+    *   [frontend/src/components/dashboard/EmergencyStopButton.tsx (L17-52)](frontend/src/components/dashboard/EmergencyStopButton.tsx#L17-L52) - Users retain full control. This component allows them to instantly **Revoke** the permission (by setting allowance to 0 or invalidating the session) if the agent misbehaves.
 
 *   **8. Transparent Reporting (Notifications):**
     *   [backend/src/services/emailService.ts (L128)](backend/src/services/emailService.ts#L128) - The agent acts as a fiduciary. After every autonomous trade, it sends a signed email receipt, ensuring the user is always informed of *how* their permission was used.
@@ -59,20 +59,21 @@ We are applying for the Envio track. Here is how we are using Envio:
 We leverage **Envio HyperSync** throughout the entire stack to ensure our Autonomous Agent has instantaneous awareness of on-chain state without relying on slow RPC polling.
 
 *   **1. Data Model Definition:**
-    *   [envio/schema.graphql](envio/schema.graphql) - Defines the `UserTrade` and `TotalVolume` entities optimized for analytics queries.
+    *   [envio/schema.graphql (L1-11)](envio/schema.graphql#L1-L11) - Defines the `UserTrade` and `TotalVolume` entities optimized for analytics queries.
 
 *   **2. Multi-Chain Indexing Logic:**
-    *   [envio/config.yaml](envio/config.yaml) - Configuration for indexing `AgentSwapExecuted` events across **multiple chains** (Sepolia, Arbitrum, Base) simultaneously.
-    *   [envio/src/AgentRouter.ts](envio/src/AgentRouter.ts) - The logic that maps raw blockchain events to our Schema entities.
+    *   [envio/config.yaml (L1-23)](envio/config.yaml#L1-L23) - Configuration for indexing `AgentSwapExecuted` events across **multiple chains** (Sepolia, Arbitrum, Base) simultaneously.
+    *   [envio/src/AgentRouter.ts (L4-35)](envio/src/AgentRouter.ts#L4-L35) - The logic that maps raw blockchain events to our Schema entities.
 
 *   **3. Serverless API (Frontend-Facing):**
-    *   [frontend/src/app/api/analytics/route.ts](frontend/src/app/api/analytics/route.ts) - A **Next.js API Route** that uses the `@envio-dev/hypersync-client` (Node.js) to query public HyperSync logs. This powers the user dashboard with <100ms latency updates.
+    *   [frontend/src/app/api/analytics/route.ts (L7-76)](frontend/src/app/api/analytics/route.ts#L7-L76) - A **Next.js API Route** that uses the `@envio-dev/hypersync-client` (Node.js) to query public HyperSync logs. This powers the user dashboard with <100ms latency updates.
 
 *   **4. Backend Verification Service (Circuit-Breaker):**
-    *   [backend/src/services/envioService.ts](backend/src/services/envioService.ts) - A robust backend service that uses HyperSync to **Verify** trades independently of the frontend. It implements a Circuit Breaker pattern to toggle between HyperSync (Primary) and RPC (Fallback) to ensure 100% uptime.
+    *   [backend/src/services/envioService.ts (L71-221)](backend/src/services/envioService.ts#L71-L221) - A robust backend service that uses HyperSync to **Verify** trades independently of the frontend. It implements a Circuit Breaker pattern to toggle between HyperSync (Primary) and RPC (Fallback) to ensure 100% uptime.
 
 *   **5. Analytics Visualization:**
-    *   [frontend/src/components/analytics/AnalyticsDashboard.tsx](frontend/src/components/analytics/AnalyticsDashboard.tsx) - Frontend component that transforms raw HyperSync data into actionable insights (PnL, Win Rate, Profit Factor) for the user.
+    *   [frontend/src/components/analytics/AnalyticsDashboard.tsx (L59-190)](frontend/src/components/analytics/AnalyticsDashboard.tsx#L59-L190) - Frontend component that transforms raw HyperSync data into actionable insights (PnL, Win Rate, Profit Factor) for the user.
+
 
 ## Feedback
 We are applying for the Feedback track. We extensively used the new **MetaMask Smart Accounts Kit** and have documented our experience, bottlenecks, and feature requests.
