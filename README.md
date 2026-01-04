@@ -4,7 +4,6 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Network](https://img.shields.io/badge/network-Ethereum%20Sepolia-grey)
 ![Architecture](https://img.shields.io/badge/architecture-Agentic-purple)
-![Track](https://img.shields.io/badge/Track-Best%20Use%20of%20Envio-green)
 
 **Agent-7715** is a next-generation "Set & Forget" DeFi Agent built for the **MetaMask Developer Hackathon**. 
 It harnesses the power of **ERC-7715 (Advanced Permissions)** to solve the biggest UX bottleneck in Web3: **The "Approve & Sign" Fatigue.**
