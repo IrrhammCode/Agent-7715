@@ -13,6 +13,17 @@ It harnesses the power of **ERC-7715 (Advanced Permissions)** to solve the bigge
 
 ---
 
+## 🏆 Participating Tracks
+We are applying for the following tracks in the MetaMask Developer Hackathon:
+
+1.  **Most Creative Use of Advanced Permissions** (ERC-7715)
+2.  **Best Use of Envio** (HyperSync)
+3.  **Best Social Media Presence on X**
+4.  **Feedback Track** (Smart Accounts Kit)
+5.  **Best Agent Integration** (Autonomous Portfolio Manager)
+
+---
+
 ## Advanced Permissions Usage
 Since the Hackathon is focused on the Advanced Permissions, here are the links for the code usage:
 
